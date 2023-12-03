@@ -1,0 +1,949 @@
+:root{
+    --primary-color:#F8CF2C;
+    --secondary-color: #fff;
+    --grey:black;
+    --bg-primary:  #252827;
+    --padding: 8%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+body{
+    background-color: var(--bg-primary);
+}
+
+/*...................................
+*..................... HOME SECTION
+...................................*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    z-index: 200;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 0.4s;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: var(--primary-color);
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px; 
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+
+h1{
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    letter-spacing: 0.12rem;
+}
+h1 span{
+    font-size: 1.5rem ;
+    color: var(--secondary-color);
+}
+
+
+h2{
+    color: var(--secondary-color);
+    margin-top: 5.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+h2 span{
+    color: var(--primary-color);
+}
+
+
+h3{
+    font-size: 3.65rem;
+    margin-top: 1.5rem;
+}
+h3 span{
+    font-size: 2.65rem;
+    margin: 1.7rem 0;
+    color: var(--primary-color);
+}
+
+
+h4{
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+    margin-top: 1.5rem;
+}
+h4 span{
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+
+.social{
+    margin-top: 3.5rem;
+}
+
+
+.social a{
+    text-decoration: none;
+}
+
+
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover{
+    transform: scale(1.2);
+}
+
+.home .container-images{
+    width: 41.5%;
+    height: 83.9%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .container-images img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 44%;
+    transform: translateX(-40%);
+    transition: bottom 1s, left 1s;
+}
+
+.home .container-images:hover .shape{
+bottom: 25px;
+}
+
+.home .container-images:hover .pic{
+   left: 30%;
+}
+
+
+
+
+
+/*...................................
+*..................... ABOUT SECTION
+...................................*/
+.about{
+    background-color: var(--grey);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .container-images{
+    width: 35%;
+}
+
+.about .container-images img{
+    width: 90%;
+}
+
+.about .container-texts{
+    width: 35%;
+    margin-bottom: 3rem;
+}
+
+
+.about h1{
+    font-size: 3.65rem;
+    color: var(--primary-color);
+    margin-top: 5rem;
+}
+.about h1 span{
+    font-size: 3.65rem;
+color: var(--secondary-color);
+}
+
+h5{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+    letter-spacing: 2px;
+}
+h5 span{
+        font-size: 1.37rem;
+        color: var(--primary-color);
+}
+
+
+p{
+        color: var(--secondary-color);
+        letter-spacing: 1px;
+        line-height: 1.8rem;
+        font-size: 1rem;
+}
+
+.download-btn{
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.82rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.download-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.content{
+    flex-grow: 1;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-texts{
+    color: var(--secondary-color);
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+
+/*...................................
+*..................... SERVICES SECTION
+...................................*/
+.services{
+    background-color: var(--bg-primary);
+    padding: 2rem var(--padding);
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+h6{
+    font-size: 3.65rem;
+    color: var(--secondary-color);
+}
+h6 span{
+    font-size: 3.65rem;
+    color: var(--primary-color);
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+
+    width: 250px;
+    background-color:var(--grey);
+    border-radius: 30px;
+    padding: 1.3rem 2rem;
+    margin: 15px;
+    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: 0 5px 20px  #f8cf2c;
+    transition: 0.4s;
+}
+
+.card:hover{
+ transform: scale(1.2);   
+}
+
+.card i{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--bg-primary);
+    margin: 2rem;
+}
+
+.card h5{
+    color: var(--primary-color);
+}
+
+
+
+
+/*...................................
+*..................... SKILLS SECTION
+...................................*/
+.skills{
+    background-color: var(--grey);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.skills .container-images{
+    width: 35%;
+    align-items: center;
+}
+
+.skills .container-images img{
+    align-items: center;
+    width: 90%;
+}
+
+.skills h1{
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+    font-size: 3.65rem;
+    color: #fff;
+}
+
+.skills h1 span{
+    font-size: 3.65rem;
+    color: var(--primary-color);
+}
+
+.skills .container-skills{
+width: 70%;
+}
+
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img{
+    width: 85%;
+}
+
+
+/*...................................
+*..................... FOOTER SECTION
+...................................*/
+
+.contact {
+    height: 80vh;
+    width: 60%;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2rem 1rem 2rem var(--primary-color);
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 15rem;
+    
+}
+
+.map, .form{
+    width: 50%;
+    height: 100%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form::before{
+    position: absolute;
+    top: 10%;
+    left: -2.8rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 1.4rem solid transparent;
+    border-right: 1.4rem solid black;
+}
+
+
+.form h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.65rem;
+    color: var(--primary-color);
+}
+
+.form h1 span{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size:2.65rem;
+    color: #fff;
+}
+
+
+.form form{
+    padding: 0 2rem;
+}
+
+.form input, .form textarea{
+       width: 100%;
+       padding: 1rem;
+       border-color: var(--primary-color);
+       border-radius: 2rem;
+       background-color: unset;
+       color: var(--primary-color);
+       font-size: 1rem;
+}
+
+.form input:not(:first-child), .form textarea, .form button{
+    margin-top: .8rem;
+}
+
+
+.form textarea{
+    height: 6rem;
+    resize: none;
+}
+
+
+.form button{
+    margin-bottom: 1.8rem;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.82rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+
+.form button:hover{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+
+
+
+
+footer{
+    margin-top: -1rem;
+    padding:  2rem var(--padding);
+    background-color: black;
+}
+
+footer .content-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p{
+    margin-top: 0.2rem;
+    margin-bottom: -0.8rem;
+}
+
+
+footer a{
+    color: #fff;
+    text-decoration-color: var(--primary-color);
+}
+
+.content-footer h1{
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+
+.content-footer h1 span{
+    font-size: 1.5rem ;
+    color: var(--secondary-color);
+    margin-top: -0.5rem;
+}
+
+footer .content-footer p{
+    margin-top: 0.2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    width: 500px;
+}
+
+
+footer .content-footer .end{
+    color: var(--primary-color);
+    margin-top: 1rem;
+    width: 500px;
+    margin-bottom: -0.2rem;
+}
+
+
+footer .content-footer .end span{
+    color: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+.hamburger{
+   display: none;
+   position: relative;
+   user-select: none;
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+   cursor: pointer;
+}
+
+
+.hamburger span{
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   background-color: var(--secondary-color);
+   border-radius: 6px;
+   transform-origin: 0 0;
+   transition: 0.4;
+}
+
+
+
+
+/*...................................
+*..................... DEVICES - HOME
+...................................*/
+#menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border:none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 4rem;
+}
+
+#menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+
+#menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translateX(15px);
+}
+
+#menu.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+#menu.is-active span{
+    background-color: var(--primary-color);
+}
+
+
+
+/*...................................
+*..................... DEVICES-MEDIA
+...................................*/
+
+
+@media screen and (max-width: 411px) {
+    :root{
+        --padding: 1.5rem;
+    }
+
+    html{
+        font-size: 13px;
+    }
+
+
+    
+
+    .home .container-images{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bg-primary);
+        border-bottom: 1px solid var(--secondary-color);
+        z-index: 100;
+    }
+
+    nav > a{
+        display: none;
+    }
+
+    nav ul{
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw;
+       height: 100vh;
+       background: var(--bg-primary);
+    }
+
+    nav ul.is-active{
+        display: block;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .container-texts{
+
+        bottom: 0;
+    }
+
+    .social{
+        margin-top: 70px;
+    }
+
+    h3{
+        margin-bottom: 70px;
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+    /*...................................
+*..................... ABOUT DEVICES
+...................................*/
+
+.about .container-images{
+    display: none;
+}
+
+.about .container-texts{
+    width: 100%;
+}
+
+
+.box{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+ /*...................................
+*..................... SKILLS DEVICES
+...................................*/
+
+.skills .container-images{
+    display: none;
+}
+
+.skills .container-skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.skills .container-skills .content-skills{
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill{
+    width: 80px;
+    height: 80px;
+}
+
+
+ /*...................................
+*..................... FOOTER DEVICES
+...................................*/
+.contact {
+    height: 60vh;
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2rem 1rem 2rem var(--primary-color);
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 2.2rem;
+    
+}
+
+.container h3{
+    margin-left: 20rem;
+}
+
+.download-btn{
+    display: none;
+}
+
+h4{
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 412px) and (max-width: 900px) {
+    :root{
+        --padding: 1.5rem;
+    }
+
+    html{
+        font-size: 13px;
+    }
+
+
+
+    .container h3{
+        margin-left: 2.5rem;
+    }
+
+
+
+
+    .home .container-images{
+        display: none;
+    }
+
+    .content{
+        padding-top: -900px;
+    }
+
+    nav{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0.7rem;
+        background-color: var(--bg-primary);
+        border-bottom: 1px solid var(--secondary-color);
+        z-index: 100;
+    }
+
+    nav > a{
+        display: none;
+    }
+
+    nav ul{
+       display: none;
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw;
+       height: 100vh;
+       background: var(--bg-primary);
+    }
+
+    nav ul.is-active{
+        display: block;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .container-texts{
+
+        padding-top: 1px;
+    }
+
+    h2{
+        font-size: 8rem;
+        margin-top: -1rem;
+    }
+
+    .social{
+        margin-bottom: 0;
+    }
+
+.social img{
+    width: 4rem;
+    margin-left: 0.5rem;
+    margin-bottom: -5rem;
+    margin-top: -5rem;
+}
+
+    h3{
+        font-size: 6rem;
+        margin-top: 1.5rem;
+    }
+
+    h3 span{
+        font-size: 6rem;
+        margin-left: 1.2rem;
+        
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+    /*...................................
+*..................... ABOUT DEVICES
+...................................*/
+
+.about .container-images{
+    display: none;
+}
+
+.about .container-texts{
+    width: 100%;
+}
+
+
+.box{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+ /*...................................
+*..................... SKILLS DEVICES
+...................................*/
+
+.skills .container-images{
+    display: none;
+}
+
+.skills .container-skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.skills .container-skills .content-skills{
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.contact {
+    height: 60vh;
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2rem 1rem 2rem var(--primary-color);
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    margin-left: 2.2rem;
+    
+}
+
+.download-btn{
+    display: none;
+}
+
+h4{
+    display: none;
+}
+}
